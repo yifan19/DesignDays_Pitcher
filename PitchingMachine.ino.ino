@@ -28,10 +28,7 @@ void loop()
   while (Serial.available() <= 0) {
       md.setSpeed2(1.0, 1.0);
   }
-  md.setSpeed2(1, 1);
-
-  if (Serial.read()
-  }
+  md.setSpeed2(0, 0);
   return;
 }
 

@@ -71,7 +71,7 @@ void ArduinoMotorShieldR3::setSpeed(unsigned char motor, float speed)
 		speed = -1; // Cap at -1
 	}
 	else if (speed > 1) {
-		speed = speed ;  // Cap at +1
+		speed = 1 ;  // Cap at +1
 	}
 	if (speed < 0) {
 		speed = -speed;  // Make speed a positive quantity
